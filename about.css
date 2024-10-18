@@ -171,3 +171,104 @@ section{
     margin-left: 8.5rem;
 }
 
+
+
+/*--------------------------Education-------------------------------------*/
+
+.educationContainer{
+    /*  background-color: grey;*/
+    background: linear-gradient(135deg,#000000, #057244,#000000 );
+    background-size:cover;
+    height: 100vh;
+    width: 100%;
+}
+.educationH3{
+    display: inline-flex;
+    margin-top: 2rem;
+    margin-left: 35rem;
+    font-weight: 600 ;
+    font-size:2rem;
+    right: 40rem;
+}
+
+.education{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+/*  body{
+    font-family: 'Baloo Tammudu 2', cursive;
+    margin: 0;
+    padding: 0;
+    background: url('https://wallpapercave.com/wp/wp7287112.jpg') no-repeat;
+    background-size:cover;
+    height: 100vh;
+    display: grid;
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+}*/
+.card{
+    cursor: default;
+    display: grid;
+    align-items: end;
+    width: 12rem;
+    min-height: 20rem;
+    padding: 40px;
+    border-radius:1rem;
+    backdrop-filter:blur(5px);
+    box-shadow: 20px 20px 20px rgba(0,0,0,.5);
+    float: left;
+    margin: 0 30px;
+    transition:1.5s all ease;
+}
+.card-dark1, .card-dark2, .card-dark3{
+    border-top: 1px solid rgba(255,255,255, .5);
+    border-left: 1px solid rgba(255,255,255, .5);
+    border-right: 1px solid rgba(0,0,0, .1);
+    border-bottom: 1px solid rgba(0,0,0, .3);
+    background: rgba(0,0,0,.3);
+    color: rgba(255,255,255,.1);
+}
+/*.card-light{
+    border-top: 1px solid rgba(255,255,255, .5);
+    border-left: 1px solid rgba(255,255,255, .5);
+    border-right: 1px solid rgba(255,255,255, .1);
+    border-bottom: 1px solid rgba(255,255,255, .3);
+    background: rgba(255,255,255,.3);
+    color: rgba(0,0,0,.1);
+}*/
+.card h3{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing:.6rem;
+    margin-bottom: 1rem;
+}
+.card p{
+    line-height: 1.4rem;
+}
+.card-dark1:hover{
+    background: rgba(255,255,255,.6);
+    color: rgba(0,0,0,.8);
+    transform:rotateX(360deg);
+}
+.card-dark2:hover{
+    background: rgba(255,255,255,.6);
+    color: rgba(0,0,0,.8);
+    transform:rotateX(360deg);
+}
+
+.card-dark3:hover{
+    background: rgba(255,255,255,.6);
+    color: rgba(0,0,0,.8);
+    transform:rotateX(360deg);
+}
+/* .card-dark:hover{
+     background: rgba(0,0,0,.6);
+     color: rgba(255,255,255,.8);
+     transform:rotateZ(360deg);
+ }*/
+
+
