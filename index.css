@@ -41,3 +41,107 @@ body {
     color: darkgreen;
     font-family: "Caveat", cursive;
 }
+
+
+.navbar a {
+    font-size: 1rem;
+    color: white;
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    color: black;
+    transition: 0.3s;
+}
+
+/* Section styles */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 5%;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 65px; /* Adjust for fixed header */
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+}
+
+.homeImg > img {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    border-radius: 70%;
+    box-shadow: 0 0 25px #057244;
+    cursor: pointer;
+    animation: animation1 4s ease-in-out infinite;
+    transition: 0.4s ease;
+}
+
+.content1 {
+    margin-left: 2rem;
+}
+
+.content1 h3 {
+    font-size: 2rem;
+    font-weight: 550;
+}
+
+.content1 h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.content1 p {
+    font-size: 1rem;
+    max-width: 500px; /* Limit paragraph width for readability */
+    margin-top: 1rem; /* Spacing between heading and paragraph */
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Change to row for better alignment */
+    font-size: 2rem;
+    margin-left: 27rem;
+    margin-top: -20rem; /* Reduced spacing */
+    gap: 1.5rem; /* Spacing between icons */
+}
+
+.links a {
+    color: #057244;
+    transition: 0.3s; /* Add a transition for hover effect */
+}
+
+.links a:hover {
+    color: darkgreen; /* Change color on hover */
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 26rem;
+    margin-top: 1rem; /* Reduced spacing */
+    gap: 1rem; /* Spacing between buttons */
+}
+
+#hire, #resume {
+    padding: 0.6rem 2.8rem;
+    background: #057244;
+    border-radius: 0.8rem;
+    color: white;
+    transition: 0.1s ease;
+    box-shadow: none;
+}
+
+#hire:hover, #resume:hover {
+    box-shadow: 0 0 1.6rem;
+}
