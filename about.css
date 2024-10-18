@@ -84,3 +84,90 @@ section{
     cursor: pointer;
     display: none;
 }
+
+
+/*-----About Me----*/
+
+.aboutContainer{
+
+    background: black;
+    /* background: linear-gradient(135deg,#000000, #057244,#000000 );*/
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*gap: 2rem;*/
+
+
+}
+.aboutH3{
+    /* margin-bottom: 35rem;
+    */
+    display: inline-flex;
+    margin-top: 7rem;
+    margin-left: 35rem;
+    /*  position: absolute;*/
+    /* top: 5rem;
+     left: 40rem;*/
+    font-weight: 600 ;
+    font-size:2rem;
+    right: 40rem;
+    color: #07F18F;
+}
+
+.aboutImg>img{
+    width: 25vw;
+    border: 2px solid darkgreen;
+    border-radius: 25%;
+    box-shadow: 0 0 25px #057244 ;
+    cursor: pointer;
+    transition: 0.4s ease;
+    margin-left: 1rem;
+    /* margin-top: 0.5rem;*/
+    margin-bottom: 12rem;
+    /*  animation: animation1 4s ease-in-out infinite;
+*/
+
+
+
+}
+
+
+.aboutContent1{
+    margin-bottom: 10rem;
+}
+.aboutContent1 h5 span{
+    margin-left: 10rem;
+    font-size: 1.2rem;
+    /* justify-content: left;*/
+
+
+
+}
+
+.aboutContent1 h5{
+    text-align:justify;
+    /* justify-content: left;*/
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: #057244;
+
+
+}
+#n1{
+    margin-right: 5rem;
+}
+#n2{
+    margin-left: 6.01rem;
+}
+#e1{
+}
+#a1{
+    margin-left:7.8rem ;
+}
+#c1{
+    margin-left: 8.5rem;
+}
+
