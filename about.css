@@ -272,3 +272,44 @@ section{
  }*/
 
 
+
+/*=============================MY SKILLS==================================*/
+
+.skillsContainer{
+    background-color: black;
+}
+
+.skillsH3{
+    display: inline-flex;
+    margin-top: 3rem;
+    margin-left: 36rem;
+    font-weight: 600 ;
+    font-size:2rem;
+    right: 40rem;
+    color: #07F18F ;
+}
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -6rem;
+}
+#java, #sql, #scene ,#html ,#css ,#figma, #js, #bootstrap {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #057244;
+    padding: 10px;
+
+    border-radius: 50%;
+
+}
+
+.skillsH4{
+    color: #057244;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 5rem;
+
+}
+
+
