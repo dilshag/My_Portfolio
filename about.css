@@ -313,3 +313,90 @@ section{
 }
 
 
+
+/*=========================PROJECTS==============================*/
+
+.myProjectsContainer{
+    background: linear-gradient(135deg, #057244,#000000 );/*#89fffd  #ef32d9*/
+
+
+}
+.myProjectH3{
+    display: inline-flex;
+    margin-top: 3rem;
+    margin-left: 36rem;
+    font-weight: 600 ;
+    font-size:2rem;
+    right: 40rem;
+    color: black;
+}
+/* Container for Glass Cards */
+.myProjectsContent {
+    display: flex;
+    gap: 30px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0;
+     padding: 0;*/
+}
+
+/* Glassmorphism Card Styles */
+.glass-card {
+    margin-top: -20rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 250px;
+    height: 300px;
+    color: white;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    transition: transform 0.3s;
+    z-index: 10;
+}
+.glass-card > p{
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+}
+.prfImg > img{
+    width: 180px;
+    height: 120px;
+    z-index: 3;
+}
+.gameImg> img{
+    width: 180px;
+    height: 120px;
+    z-index: 3;
+}
+.lmsImg >img{
+    width: 180px;
+    height: 120px;
+    z-index: 3;
+}
+/* Card Hover Effect */
+.glass-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Glass Button Styles */
+.glass-button {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button Hover Effect */
+.glass-button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+
