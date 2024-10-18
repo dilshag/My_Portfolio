@@ -630,3 +630,72 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   }
 */
 
+/*==========================FOOTER=================================*/
+.footerContainer{
+    background: linear-gradient(100deg, #057244 ,#737373  );;
+
+
+}
+.footerH3{
+    display: inline-flex;
+    margin-top: 3rem;
+    margin-left: 34rem;
+    font-weight: 600 ;
+    font-size:2rem;
+    right: 40rem;
+    color: #07F18F;
+}
+.footer{
+    display: grid;
+
+    /*  flex-direction: row;*/
+}
+.contactH5 {
+    margin-left: 5rem;
+    margin-top: -1.3rem;
+}
+.footerContent1 > .contact{
+    /* color: #737373;*/
+    color: black;
+    margin-top: -2rem;
+    margin-left: 3rem;
+
+}
+.footerContent2 > .nav-to{
+    margin-left: 55rem;
+    margin-top: -8rem;
+    /*color: #057244;*/
+    color: black;
+
+}
+.footerContent2 > .nav{
+    margin-left: 56rem ;
+    margin-top: 1rem;
+    color: black;
+}
+.footerContent2 > .nav > div > ul a{
+    color: black;
+    font-weight: 600;
+
+}
+/* Thick red border */
+hr.new4 {
+    border: 1px solid #07F18F;
+}
+
+
+.footerContent3 >.links{
+    margin-left: 33rem;
+
+
+}
+
+.footerContent3 > .content3{
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    font-style: italic;
+
+}
