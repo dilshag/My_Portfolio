@@ -28,7 +28,8 @@
 <body>
 <header class="header">
     <div class="logo">DIL<span>S</span>HA</div>
-    <nav class="navbar">
+    <!-- Menu Icon for Mobile View -->
+    <div id="menu-icon">&#9776;</div> <!-- Hamburger icon for mobile --> <nav class="navbar">
         <a href="index.html">HOME</a>
         <a href="about.html">ABOUT</a>
         <a href="services.html">SERVICES</a>
@@ -63,5 +64,15 @@
         </div>
     </section>
 </main>
+
+<!-- JavaScript for Menu Toggle -->
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.querySelector('.navbar');
+
+    menuIcon.addEventListener('click', () => {
+        navbar.classList.toggle('active');  // Show/hide the navbar
+    });
+</script>
 </body>
 </html>
