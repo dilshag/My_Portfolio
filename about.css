@@ -177,8 +177,10 @@ section{
 
 .educationContainer{
     /*  background-color: grey;*/
+    /*
     background: linear-gradient(135deg,#000000, #057244,#000000 );
-    background-size:cover;
+    */
+    background:black;
     height: 100vh;
     width: 100%;
 }
@@ -538,19 +540,22 @@ object-fit: cover; /* Ensure images cover the area without distortion */
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
 .galleryContainer {
+    background: black;
+    /*
     background: linear-gradient(300deg,#000000 ,#057244 );
+    */
+    .galleryH3 {
+        display: inline-flex;
+        margin-top: 3rem;
+        margin-left: 36rem;
+        font-weight: 600 ;
+        font-size:2rem;
+        right: 40rem;
+        color: #07F18F;
+    }
     /* url("https://codepen.io/images/classy_fabric.png");*/
     height: 100vh;
     width: 100%;
-}
-.galleryH3 {
-    display: inline-flex;
-    margin-top: 3rem;
-    margin-left: 36rem;
-    font-weight: 600 ;
-    font-size:2rem;
-    right: 40rem;
-    color: black;
 }
 .galleryContent{
     display: flex;
