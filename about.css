@@ -314,6 +314,130 @@ section{
 
 
 
+/*=========================ASSIGNMENTS=======================*/
+
+.assignmentContainer{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+
+.assignmentsH3{
+    display: inline-flex;
+  /*  text-align: center;*/
+    margin-top: 3rem;
+    margin-left: 36rem;
+    font-weight: 600 ;
+    font-size:2rem;
+    right: 40rem;
+    color: #07F18F ;
+}
+.assignment {
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1000;
+    box-sizing: border-box;
+    padding: 20px; /* Add some padding to the container */
+}
+
+/*.gal {
+    text-align: center;
+}*/
+
+/*.gal h2 {
+    margin-bottom: 20px;
+    color: #07F18F;
+    font-size: 48px;
+    margin-top: 40px;
+}*/
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    max-width: 75%;
+    justify-content: center; /* Center the grid */
+    margin: 0 auto; /* Center the gallery in its container */
+    align-items: start; /* Align items to the start */
+}
+
+.gallery-grid div {
+    text-align: center; /* Center the title and images */
+}
+
+.gallery-grid h3 {
+    margin: 10px 0; /* Space between title and image */
+    color: white; /* Title color */
+    font-size: 18px; /* Title font size */
+}
+
+.gallery-grid img {
+/width: 100%;/
+    /* height: 200px;/ / Set a fixed height for consistency */
+object-fit: cover; /* Ensure images cover the area without distortion */
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+
+.link-container {
+    display: flex; /* Use flexbox to align icons */
+    justify-content: center; /* Center the icons */
+    margin-top: 5px; /* Space above the icons */
+}
+
+.link {
+    width: 30px; /* Set a larger width for link icons */
+    height: 30px; /* Set a fixed height for icons */
+    margin: 0 5px; /* Space between icons */
+    cursor: pointer; /* Change cursor to pointer for interactivity */
+}
+
+.link:hover {
+    transform: scale(1.1); /* Scale up on hover for effect */
+}
+
+
+/* Media Queries */
+@media (min-width: 1024px) {
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns on laptop size */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on tablet size */
+    }
+    .assignmentsH3{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 375px) {
+    .gallery-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column on mobile size */
+        justify-content: center; /* Center the grid */
+        margin: 0 auto; /* Center the grid container */
+        padding: 0 20px; /* Optional padding for mobile */
+    }
+}
+
+@media (max-width: 374px) {
+    .gallery-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for very small screens */
+        justify-content: center; /* Center the images */
+        margin: 0 auto; /* Center the grid container */
+        padding: 0 20px; /* Optional padding to avoid edges */
+    }
+    .assignmentsH3{
+        font-size: 36px;
+    }
+}
+
 /*=========================PROJECTS==============================*/
 
 .myProjectsContainer{
