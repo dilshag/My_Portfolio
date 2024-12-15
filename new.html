@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is the description">
+    <meta name="keywords" content="java,html,css,go,react,angular">
+    <meta name="author" content="Dilsha">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="Assest/image/logo.png">
+    <link rel="stylesheet" href="Assest/normalize.css">
+    <link rel="stylesheet" href="Assest/style/about.css">
+    <!--AOS LIBRARY-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--BOX ICON-->
+    <link rel="stylesheet"
+          href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- REMIX BOX ICON-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+          rel="stylesheet"/>
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Dilsha Perera</title>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+    @import url(https://fonts.googleapis.com/css?family=Raleway:400,300|Raleway+Dots|Lato:300|Inconsolata|Montserrat);
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        font-family: -apple-system, sans-serif;
+    }
+
+   /* :root{
+        background-color: white;
+
+    }*/
+
+    body{
+        background: black;
+        /*   position: relative;*/
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+   /* section{
+        max-height: 100vh;
+        padding: 8rem 9% 1rem;
+    }*/
+
+
+    .header {
+        position: fixed;
+        width: 100%;
+        height: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+        background: #057244;
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        top: 0;
+    }
+
+    .navbar{
+        display: flex;
+    }
+
+    .logo {
+        font-size: 2rem;
+        color: black;
+        font-weight: 1000;
+        transition: 0.3s ease;
+        font-family: "Caveat", cursive;
+    }
+
+    .logo > span {
+        color: darkgreen;
+        font-family: "Caveat", cursive;
+    }
+
+
+    .navbar a {
+        font-size: 1rem;
+        color: white;
+        margin: 0 10px;
+        font-weight: 600;
+
+
+
+    }
+
+    .navbar a:hover {
+        color: black;
+        transition: 0.3s;
+    }
+
+
+    #menu-icon {
+        display: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+    /*
+
+    .header{
+        position: fixed;
+        width: 100%;
+        height: 65px;
+        top: 0;
+        bottom: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 5%;
+        background: linear-gradient( 30deg ,#737373,#000000 );
+        !*  background: linear-gradient( 100deg ,#057244,#000000 );*!
+        backdrop-filter: blur(10px);
+        transition:  all 0.5s ease;
+
+
+    }
+
+    .logo{
+        font-size: 2rem;
+        color: black;
+        font-weight: 1000;
+        transition: 0.3s ease;
+        font-family: "Caveat", cursive;
+    }
+
+    .logo>span{
+        color: darkgreen;
+        font-family: "Caveat", cursive;
+    }
+
+    .logo:hover{
+        transform: scale(1.05);
+    }
+
+    .navbar a{
+        font-size: 1rem;
+        color: white;
+        letter-spacing: 0.05rem;
+        !*   word-spacing: 50px;*!
+        margin: 0px 20px;
+        font-weight: 600;
+    }
+
+    .navbar a:hover{
+        color: #07F18F; !*nav eke menu eka touch krnakota green wenawa*!
+        transition: .3s;
+    }
+
+    #menu-icon{
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+        display: none;
+    }
+    */
+
+
+    /*-----About Me----*/
+
+    .aboutContainer{
+
+        background: black;
+        /* background: linear-gradient(135deg,#000000, #057244,#000000 );*/
+    }
+
+    .about{
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        align-items: center;
+        width: 100%;
+        justify-items: center; /* Center the content horizontally */
+
+
+    }
+    .aboutH3{
+        /* margin-bottom: 35rem; */
+        display: grid;
+        margin-top: 8rem;
+        /*margin-left: 35rem*/
+        /*  position: absolute;*/
+        /* top: 5rem;
+         left: 40rem;*/
+        text-align: center;
+        align-items: center;
+        font-weight: 600 ;
+        font-size:2rem;
+        right: 40rem;
+        color: #07F18F;
+    }
+
+    .aboutImg>img{
+        width: 25vw;
+        border: 2px solid darkgreen;
+        border-radius: 25%;
+        box-shadow: 0 0 25px #057244 ;
+        cursor: pointer;
+        transition: 0.4s ease;
+        margin-left: 1rem;
+        /* margin-top: 0.5rem;*/
+        margin-bottom: 12rem;
+        /*  animation: animation1 4s ease-in-out infinite;
+    */
+
+
+
+    }
+
+
+    .aboutContent1{
+        margin-bottom: 10rem;
+    }
+    .aboutContent1 h5 span{
+        margin-left: 10rem;
+        font-size: 1.2rem;
+        /* justify-content: left;*/
+
+
+
+    }
+
+    .aboutContent1 h5{
+        text-align:justify;
+        /* justify-content: left;*/
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+        color: #057244;
+
+
+    }
+    #n1{
+        margin-right: 5rem;
+    }
+    #n2{
+        margin-left: 6.01rem;
+    }
+    #e1{
+    }
+    #a1{
+        margin-left:7.8rem ;
+    }
+    #c1{
+        margin-left: 8.5rem;
+    }
+
+
+    /* Responsive Styling for Mobile Small */
+    @media (max-width: 480px) {
+        .about {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        .aboutH3 {
+            font-size: 1.5rem;
+        }
+
+        .aboutImg > img {
+            width: 60vw;
+            margin-bottom: 2rem;
+        }
+
+        .aboutContent1 h5 {
+            font-size: 1rem;
+            line-height: 1.8rem;
+        }
+
+        .navbar {
+            display: none;
+            position: fixed;
+            top: 65px;
+            right: 0;
+            background: #057244;
+            height: 25vh;
+            width: 100%;
+            text-align: center;
+        }
+
+        #menu-icon {
+            display: block;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #menu-icon {
+            display: block;
+        }
+
+        .navbar {
+
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            position: fixed;
+            top: 65px;
+            right: 0;
+            background: #057244;
+            height: 25vh;
+            width: 100%;
+            text-align: center;
+            opacity: 50%;
+
+
+            /* transform: translateX(100%);
+            transition: transform 2s ease-in-out;*/
+        }
+
+
+        .navbar.active{
+            display: flex;
+        }
+
+        .about {
+            grid-template-columns: 1fr;
+        }
+
+        .aboutH3 {
+            font-size: 1.8rem;
+            margin-top: 7rem;
+        }
+
+        .aboutImg > img {
+            width: 40vw;
+            margin-bottom: 6rem;
+        }
+
+
+        .navbar a {
+            font-size: 1.1rem;
+            margin-top: 13px;
+        }
+
+
+
+
+
+      /*
+        #menu-icon {
+            display: block;
+        }
+
+        .navbar {
+
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            position: fixed;
+            top: 65px;
+            right: 0;
+            background: #057244;
+            height: 25vh;
+            width: 100%;
+            text-align: center;
+            opacity: 50%;
+
+
+            !* transform: translateX(100%);
+             transition: transform 2s ease-in-out;*!
+        }
+
+        !*
+            .links a {
+                color: #057244;
+                transition: 0.3s; !* Add a transition for hover effect *!
+            }
+
+            .links a:hover {
+                color: darkgreen; !* Change color on hover *!
+            }*!
+        .navbar.active{
+            display: flex;
+        }
+
+       !* .home {
+            grid-template-columns: 1fr;
+            text-align: center;
+            align-items: center;
+            justify-items: center;
+            justify-content: center; !* Center the content vertically *!
+        }*!
+
+        .navbar a {
+
+            font-size: 1.1rem;
+            margin-top: 13px;
+        }
+
+        .aboutH3{
+            text-align: center;
+            display: grid;
+           !* margin-top: 7rem;
+            margin-left: 19rem;*!
+            font-weight: 600 ;
+            font-size:2rem;
+            !*right: 40rem;*!
+           !* color: #07F18F;*!
+        }
+
+        .aboutImg{
+            display: flex;
+            justify-content: center; !* Center the image horizontally *!
+            align-items: center; !* Center the image vertically if needed *!
+            width: 100%; !* Ensure the container takes full width *!
+            margin: 0 auto; !* Center the container itself *!
+           !* width: 30vw;*!
+           !* border: 2px solid darkgreen;
+            border-radius: 25%;
+            box-shadow: 0 0 25px #057244 ;
+            cursor: pointer;
+            transition: 0.4s ease;*!
+           !* margin-left: 1rem;*!
+            !* margin-top: 0.5rem;*!
+           !* margin-bottom: 12rem;*!
+            !*  animation: animation1 4s ease-in-out infinite;
+        *!
+
+        }
+
+        .homeImg >img{
+            width: 40vh;
+            height: 40vh;
+            margin-top: -5rem;
+
+
+        }
+
+
+        .aboutContent1{
+            !*
+            margin: 0 auto;
+            *!
+            justify-self: center; !* Center the text *!
+            max-width: 90%; !* Ensure content fits within the screen *!
+
+            margin-bottom: 10rem;
+        }
+        .aboutContent1 h5 span{
+            justify-self: center; !* Center the text *!
+            max-width: 90%; !* Ensure content fits within the screen *!
+
+            margin-bottom: 10rem;
+            margin-left: 10rem;
+            font-size: 1.2rem;
+            !* justify-content: left;*!
+
+
+
+        }
+
+        .aboutContent1 h5{
+            text-align:justify;
+            !* justify-content: left;*!
+            font-size: 1.5rem;
+            line-height: 2.3rem;
+            color: #057244;
+
+
+        }
+        #n1{
+            margin-right: 5rem;
+        }
+        #n2{
+            margin-left: 6.01rem;
+        }
+        #e1{
+        }
+        #a1{
+            margin-left:7.8rem ;
+        }
+        #c1{
+            margin-left: 8.5rem;
+        }*/
+
+
+        @media (max-width: 480px) {
+
+            }
+
+
+    }
+</style>
+</head>
+<body>
+
+
+<header class="header">
+    <div class="logo">DIL<span>S</span>HA</div>
+    <!-- Menu Icon for Mobile View -->
+    <div id="menu-icon">&#9776;</div> <!-- Hamburger icon for mobile -->
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+</header>
+
+<main class="aboutContainer"> <!--About-->
+    <h3 class="aboutH3">ABOUT ME</h3>
+
+    <section class="about">
+        <div class="aboutImg">
+            <img src="Assest/image/about/IMG_1956%2011.JPG" alt="Photo 1">
+        </div>
+
+        <div class="aboutContent1">
+            <h5>Name:<span id="n1">Dilsha Perera </span> </h5>
+            <h5>Nationality:<span id="n2"> Sri Lanka</span> </h5>
+            <h5>Email:<span id="e1">dilshaperera1118@gmail.com</span>  </h5>
+            <h5>Address:<span id="a1"> Kalegana,Galle </span></h5>
+            <h5>Contact:<span id="c1">078 -5302355 </span> </h5>
+
+        </div>
+    </section>
+</main>
+<!--
+<main class="educationContainer">&lt;!&ndash;EDUCATION&ndash;&gt;
+    <h3 class="educationH3">EDUCATION</h3>
+    <section class="education">
+
+        <div id="bg"></div>
+        <div class="eduContent1">
+            <div class="card card-dark1">
+                <div>
+                    <img src="Assest/image/about/Rippon.png" alt="rippon">
+                </div>
+                <h4>Rippon Girls’ Collage Galle</h4>
+                <h6>2005-2018</h6>
+                <p>In 2015, I took the Ordinary Level Examination, and in2018, I sat for the Advanced Level Examination</p>
+            </div>
+
+            <div class="card card-dark2">
+                <div>
+                    <img src="Assest/image/about/cot.png" alt="cot">
+                </div>
+                <h4>College Of Technology</h4>
+                <h6>2022</h6>
+                <p>I took Certificate in Telecommunication Technician NVQ Level 4</p>
+            </div>
+
+            <div class="card card-dark3">
+                <div>
+                    <img src="Assest/image/about/ijse.png" alt="ijse">
+                </div>
+                <h4>Institute Of Software Engineering</h4>
+                <h6>2024-Present</h6>
+                <p>I am currently pursuing a BSC (Hons) in Computer Science at IJSE</p>
+            </div>
+            &lt;!&ndash; <div class="card card-light">
+                 <h3>Card Title</h3>
+                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora provident obcaecati temporibus sequi similique ullam sint sunt illum.</p>
+             </div>&ndash;&gt;
+        </div>
+    </section>
+</main>
+
+<main class="skillsContainer"> &lt;!&ndash;MY SKILLS&ndash;&gt;
+    <h3 class="skillsH3">MY SKILLS</h3>
+    <section class="skills">
+
+        <div class="skillsContent1">
+            <div>
+                <h4 class="skillsH4">Java</h4>
+                <img src="Assest/image/about/java.png" alt="java" id="java">
+            </div>
+
+            <div>
+                <h4 class="skillsH4">MySQL</h4>
+                <img src="Assest/image/about/mysql.png" alt="mysql" id="sql">
+            </div>
+
+            <div>
+                <h4 class="skillsH4">SceneBuilder</h4>
+                <img src="Assest/image/about/scenebuilder.png" alt="scn" id="scene">
+            </div>
+
+            <div>
+                <h4 class="skillsH4">HTML</h4>
+                <img src="Assest/image/about/html.png" alt="html" id="html">
+            </div>
+
+        </div>
+        <div class="skillsContent2">
+            <div>
+                <h4 class="skillsH4">CSS</h4>
+                <img src="Assest/image/about/css.png" alt="css" id="css">
+            </div>
+
+            <div>
+                <h4 class="skillsH4">Figma</h4>
+                <img src="Assest/image/about/figma.png" alt="figma" id="figma">
+            </div>
+
+            <div>
+                <h4 class="skillsH4">JavaScript</h4>
+                <img src="Assest/image/about/png-javascript-badge-picture-8%201.png" alt="figma" id="js">
+            </div>
+
+            <div>
+                <h4 class="skillsH4">Bootstrap</h4>
+                <img src="Assest/image/about/bootstrap-256%202.png" alt="figma" id="bootstrap">
+            </div>
+
+
+
+        </div>
+
+    </section>
+</main>
+
+
+
+<main class="assignmentContainer">
+    <h3 class="assignmentsH3">ASSIGNMENT </h3>
+    <section class="assignment">
+        <div class="gallery-grid">
+            <div>
+                <h3>Assignment 01</h3>
+                <img  src="Assest/image/about/assignment-icon.png" alt="Assignment 1">
+                <div class="link-container">
+                    <a href="https://github.com/dilshag/CSS_Assignment-03">
+                        <img class="link"  src="Assest/image/about/github-30.png"></a>
+
+                    <a href="Assignments/Assignment 01/assignment-01.html">
+                        <img class="link" src="Assest/image/about/view-30.png"></a>
+                </div>
+            </div>
+            <div>
+                <h3>Assignment 02</h3>
+                <img src="Assest/image/about/assignment-icon.png" alt="Assignment 2">
+                <div class="link-container">
+                    <img class="link"  src="Assest/image/about/github-30.png">
+                    <img class="link" src="Assest/image/about/view-30.png">
+                </div>
+            </div>
+            <div>
+                <h3>Assignment 03</h3>
+                <img src="Assest/image/about/assignment-icon.png" alt="Assignment 3">
+                <div class="link-container">
+                    <img class="link"  src="Assest/image/about/github-30.png">
+                    <img class="link" src="Assest/image/about/view-30.png">
+
+                </div>
+            </div>
+            <div>
+                <h3>Assignment 04</h3>
+                <img src="Assest/image/about/assignment-icon.png" alt="Assignment 4">
+                <div class="link-container">
+                    <img class="link"  src="Assest/image/about/github-30.png">
+                    <img class="link" src="Assest/image/about/view-30.png">
+                </div>
+            </div>
+            <div>
+                <h3>Assignment 05</h3>
+                <img src="Assest/image/about/assignment-icon.png" alt="Assignment 5">
+                <div class="link-container">
+                    <img class="link"  src="Assest/image/about/github-30.png">
+                    <img class="link" src="Assest/image/about/view-30.png">
+                </div>
+            </div>
+            <div>
+                <h3>Assignment 06</h3>
+                <img src="Assest/image/about/assignment-icon.png" alt="Assignment 6">
+                <div class="link-container">
+                    <img class="link"  src="Assest/image/about/github-30.png">
+                    <img class="link" src="Assest/image/about/view-30.png">
+                </div>
+            </div>
+            <div>
+                <h3>Assignment 07</h3>
+                <img src="Assest/image/about/assignment-icon.png" alt="Assignment 7">
+                <div class="link-container">
+                    <img class="link"  src="Assest/image/about/github-30.png">
+                    <img class="link" src="Assest/image/about/view-30.png">
+                </div>
+            </div>
+            <div>
+                <h3>Assignment 08</h3>
+                <img src="Assest/image/about/assignment-icon.png" alt="Assignment 8">
+                <div class="link-container">
+                    <img class="link"  src="Assest/image/about/github-30.png">
+                    <img class="link" src="Assest/image/about/view-30.png">
+                </div>
+            </div>
+            <div>
+                <h3>Assignment 09</h3>
+                <img src="Assest/image/about/assignment-icon.png" alt="Assignment 9">
+                <div class="link-container" >
+                    <img class="link"  src="Assest/image/about/github-30.png">
+                    <img class="link" src="Assest/image/about/view-30.png">
+                </div>
+            </div>
+            <div>
+                <h3>Assignment 10</h3>
+                <img src="Assest/image/about/assignment-icon.png" alt="Assignment 10">
+                <div class="link-container">
+                    <img class="link"  src="Assest/image/about/github-30.png">
+                    <img class="link" src="Assest/image/about/view-30.png">
+                </div>
+            </div>
+            <div>
+                <h3>Assignment 11</h3>
+                <img src="Assest/image/about/assignment-icon.png" alt="Assignment 11">
+                <div class="link-container">
+                    <img class="link"  src="Assest/image/about/github-30.png">
+                    <img class="link" src="Assest/image/about/view-30.png">
+                </div>
+            </div>
+            <div>
+                <h3>Assignment 12</h3>
+                <img src="Assest/image/about/assignment-icon.png" alt="Assignment 12">
+                <div class="link-container">
+                    <img class="link"  src="Assest/image/about/github-30.png">
+                    <img class="link" src="Assest/image/about/view-30.png">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</main>
+
+<main class="myProjectsContainer">&lt;!&ndash;MY PROJECTS&ndash;&gt;
+    <h3 class="myProjectH3">MY PROJECTS</h3>
+    <section class="myProjects">
+
+        &lt;!&ndash; Main Container &ndash;&gt;
+        <div class="myProjectsContent">
+            &lt;!&ndash; Glassmorphism Card 1 &ndash;&gt;
+            <div class="glass-card">
+                <div class="prfImg">
+                    <img src="Assest/image/about/prf.png" alt="prf" >
+                </div>
+                <h3>PRF Project</h3>
+                <p>Developed a console-based Java application for a Programming Fundamentals coursework.</p>
+                <button class="glass-button"><a href="" id="git4"><i class='bx bxl-github' undefined ></i></a>Go to Git</button>
+            </div>
+
+            &lt;!&ndash; Glassmorphism Card 2 &ndash;&gt;
+            <div class="glass-card">
+                <div class="gameImg">
+                    <img src="Assest/image/about/game.png" alt="game">
+                </div>
+                <h3>Connect Four Game</h3>
+                <p>This is a game that made using JavaFx and Java OOP concepts.</p>
+                <button class="glass-button"><a href="" id="git3"><i class='bx bxl-github' undefined ></i></a>Go to Git</button>
+            </div>
+
+            &lt;!&ndash; Glassmorphism Card 3 &ndash;&gt;
+            <div class="glass-card">
+
+                <div class="lmsImg">
+                    <img src="Assest/image/about/libraryManSys.png" alt="lbry">
+                </div>
+                <h3>Library Management System</h3>
+                <p>This is a standalone application made using JavaFx and Java OOP concepts.</p>
+                <button class="glass-button" > <a href="https://github.com/dilshag/Library_Management_System-Semester_Final-" id="git2"><i class='bx bxl-github' undefined ></i></a></button>
+
+            </div>
+        </div>
+
+        &lt;!&ndash;  <script src="scripts.js"></script>&ndash;&gt;
+
+    </section>
+</main>
+
+<main class="galleryContainer">&lt;!&ndash;GALLERY&ndash;&gt;
+    <h3 class="galleryH3">GALLERY</h3>
+    <div class="galleryContent">
+
+        <ul class="slides">
+            <input type="radio" name="radio-btn" id="img-1" checked />
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="Assest/image/about/img1.png" alt="img1" />
+                </div>
+                <div class="nav">
+                    <label for="img-6" class="prev">&#x2039;</label>
+                    <label for="img-2" class="next">&#x203a;</label>
+                </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-2" />
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="Assest/image/about/img2.png" alt="img2" />
+                </div>
+                <div class="nav">
+                    <label for="img-1" class="prev">&#x2039;</label>
+                    <label for="img-3" class="next">&#x203a;</label>
+                </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-3" />
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="Assest/image/about/img3.png" alt="img3" />
+                </div>
+                <div class="nav">
+                    <label for="img-2" class="prev">&#x2039;</label>
+                    <label for="img-4" class="next">&#x203a;</label>
+                </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-4" />
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="Assest/image/about/img4.png" alt="img4" />
+                </div>
+                <div class="nav">
+                    <label for="img-3" class="prev">&#x2039;</label>
+                    <label for="img-5" class="next">&#x203a;</label>
+                </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-5" />
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="Assest/image/about/img5.png" alt="img5" />
+                </div>
+                <div class="nav">
+                    <label for="img-4" class="prev">&#x2039;</label>
+                    <label for="img-6" class="next">&#x203a;</label>
+                </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-6" />
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="Assest/image/about/img6.png" alt="img6" />
+                </div>
+                <div class="nav">
+                    <label for="img-5" class="prev">&#x2039;</label>
+                    <label for="img-1" class="next">&#x203a;</label>
+                </div>
+            </li>
+
+            <li class="nav-dots">
+                <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+                <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+                <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+            </li>
+        </ul>
+    </div>
+    &lt;!&ndash; <section class="gallery">
+         <input type="radio" name="slider" id="s1" checked>
+         <input type="radio" name="slider" id="s2">
+         <input type="radio" name="slider" id="s3">
+         <input type="radio" name="slider" id="s4">
+         <input type="radio" name="slider" id="s5">
+
+         <label for="s1" id="slide1"><img src="https://i.pinimg.com/originals/2b/de/de/2bdede0647e3cdf75b44ea33723201d9.jpg" alt=""></label>
+         <label for="s2" id="slide2"><img src="https://images6.alphacoders.com/462/thumb-1920-462371.jpg" alt=""></label>
+         <label for="s3" id="slide3"><img src="https://wallpaperaccess.com/full/1154341.jpg" alt=""></label>
+         <label for="s4" id="slide4"><img src="https://wallpapercave.com/wp/wp2634222.jpg" alt=""></label>
+         <label for="s5" id="slide5"><img src="https://images5.alphacoders.com/343/thumb-1920-343645.jpg" alt=""></label>
+     </section>&ndash;&gt;
+
+
+    &lt;!&ndash; <section class="gallery">
+         <div>
+             <h3>GALLERY</h3>
+         </div>
+         <div>
+             <img src="Assest/image/about/img1.png" alt="img1">
+         </div>
+         <div>
+             <img src="Assest/image/about/img2.png" alt="img1">
+         </div>
+         <div>
+             <img src="Assest/image/about/img3.png" alt="img3">
+         </div>
+         <div>
+             <img src="Assest/image/about/img4.png" alt="img4">
+         </div>
+         <div>
+             <img src="Assest/image/about/img5.png" alt="img5">
+         </div>
+         <div>
+             <img src="Assest/image/about/img6.png" alt="img6">
+         </div>
+         <div>
+             <img src="Assest/image/about/img7.png" alt="img7">
+         </div>
+         <div>
+             <img src="Assest/image/about/img8.png" alt="img8">
+         </div>
+         <div>
+             <img src="Assest/image/about/img9.png" alt="img9">
+         </div>
+     </section>&ndash;&gt;
+</main>
+
+
+<footer class="footerContainer">
+    <h3 class="footerH3">Let's have a chat..!</h3>
+    <section class="footer">
+
+        <div class="footerContent1">
+            <h4 class="contact">CONTACT ME</h4>
+            <div class="cont-details">
+                <div>
+                    <img src="Assest/image/footer/icons8-user-30.png" alt="user">
+                    <h5 class="contactH5">V.Dilsha Pawani Perera</h5>
+                </div>
+
+                <div>
+                    <img src="Assest/image/footer/icons8-email-30.png" alt="email">
+                    <h5 class="contactH5">dilshaperera1118@gmail.com</h5>
+                </div>
+
+                <div>
+                    <img src="Assest/image/footer/icons8-phone-30%20(1).png" alt="phone">
+                    <h5 class="contactH5">+94785302355</h5>
+                </div>
+
+                <div>
+                    <img src="Assest/image/footer/icons8-address-30%20(1).png" alt="address">
+                    <h5 class="contactH5">“Sunanda”,Wakwella Road,Kalegana,Galle</h5>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footerContent2">
+            <h4 class="nav-to">NAVIGATE TO</h4>
+
+            <nav class="nav">
+                <div> &lt;!&ndash;MENU&ndash;&gt;
+                    <ul>
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="about.html">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="services.html">SERVICES</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="footerContent3">
+            <div class="links">
+                <a href="https://github.com/dilshag" id="git"><i class='bx bxl-github' undefined ></i></a>
+                <a href=""><i class='bx bxl-linkedin' id="linkdin"></i></a>
+                <a href=""><i class='bx bxl-instagram' id="insta" ></i> </a>
+                <a href=""><i class='bx bxl-whatsapp' id="whtsapp"></i> </a>
+
+            </div>
+            <hr class="new4">
+            <div class="content3">
+                <p>Copyright ©. All right reserved.<br>Design By : Dilsha Perera</p>
+            </div>
+        </div>
+    </section>
+</footer>-->
+
+
+<!-- JavaScript for Menu Toggle -->
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.querySelector('.navbar');
+
+    menuIcon.addEventListener('click', () => {
+        navbar.classList.toggle('active');  // Show/hide the navbar
+    });
+</script>
+</body>
+</html>

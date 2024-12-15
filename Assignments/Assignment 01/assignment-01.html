@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is the description">
+    <meta name="keywords" content="java,html,css,go,react,angular">
+    <meta name="author" content="Dilsha">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Assest/normalize.css">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Dilsha Perera</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2f2f2;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 50vw;
+            height: 80vh;
+            background: linear-gradient(180deg, rgba(103,103,103,1) 0%, rgba(52,52,52,1) 46%, rgba(1,1,1,1) 100%);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            color: white;
+        }
+
+        #hed {
+            justify-content: center;
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        .label {
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        .button-28 {
+            appearance: none;
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #07F18F;
+            border-radius: 10px;
+            padding: 15px;
+            width: 25%;
+            text-align: center;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 300ms ease;
+        }
+
+        .button-28:hover {
+            background-color: black;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-28:active {
+            transform: translateY(0);
+            box-shadow: none;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .card {
+                width: 80vw;
+                height: 50%;
+                padding: 15px;
+            }
+
+            #hed {
+                font-size: 50px;
+            }
+
+            .button-28 {
+                font-size: 28px;
+                padding: 10px;
+                margin-top: 100px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 90vw;
+                height: auto;
+            }
+
+            #hed {
+                font-size: 40px;
+            }
+
+            .button-28 {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div>
+        <h1 id="hed">Assignment 01</h1>
+        <div class="card">
+            <div class="label">
+                <a href="Cases/case-01.html"><button class="button-28" role="button">Case 01</button></a>
+            </div>
+            <div class="label">
+                <a href="Cases/case-02.html"><button class="button-28" role="button">Case 02</button></a>
+            </div>
+            <div class="label">
+                <a href="Cases/case-03.html"><button class="button-28" role="button">Case 03</button></a>
+            </div>
+            <div class="label">
+                <a href="Cases/case-04.html"><button class="button-28" role="button">Case 04</button></a>
+            </div>
+            <div class="label">
+                <a href="Cases/case-05.html"><button class="button-28" role="button">Case 05</button></a>
+            </div>
+            <div class="label">
+                <a href="Cases/case-06.html"><button class="button-28" role="button">Case 06</button></a>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
