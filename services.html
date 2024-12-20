@@ -40,16 +40,12 @@
 <header class="header">
   <div class="logo">DIL<span>S</span>HA</div>
   <!-- Menu Icon for Mobile View -->
-  <div id="menu-icon2">&#9776;</div> <!-- Hamburger icon for mobile --> <nav class="navbar">
-
-<nav class="navbar">
-    <!--MENU-->
+  <div id="menu-icon">&#9776;</div> <!-- Hamburger icon for mobile -->
+  <nav class="navbar">
     <a href="index.html">HOME</a>
     <a href="about.html">ABOUT</a>
     <a href="services.html">SERVICES</a>
     <a href="contact.html">CONTACT</a>
-
-    <div class="bx bx-menu icon" id="menu-icon"></div>
   </nav>
 </header>
 
@@ -195,137 +191,16 @@
     </div>
   </section>
 </footer>
-<!--
-<header>
-  <nav>
-    <div>
-      <img src="Assest/image/Perfect%20unique%20attractive%20stylish%20geometric%20tech%20PD%20DP%20P%20D%20initial%20based%20letter%20icon%20logo..png" alt="logo">
-    </div>
-
-    <div> &lt;!&ndash;MENU&ndash;&gt;
-      <ul>
-        <li>
-          <a href="index.html">HOME</a>
-        </li>
-        <li>
-          <a href="about.html">ABOUT</a>
-        </li>
-        <li>
-          <a href="services.html">SERVICES</a>
-        </li>
-        <li>
-          <a href="contact.html">CONTACT</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<main>
-  <h3>SERVICES</h3>
-
-  <section>
-    <div>
-      <h5>Design Systems</h5>
-      <p>I design and develop <br>services for customers <br>of all sizes, specializing <br>in creating stylish,<br>modern websites.</p>
-    </div>
-  </section>
-
-  <section>
-    <div>
-      <h5>Interactive User Interfaces</h5>
-      <p>I develop engaging and <br> interactive user <br>interfaces using modern <br>JavaScript frameworks</p>
-    </div>
-  </section>
-
-  <section>
-    <div>
-      <h5>Performance Optimization</h5>
-      <p>I optimize your website's <br>performance by <br>minimizing load times <br>and ensuring fast, <br>smooth interactions</p>
-    </div>
-  </section>
-</main>
 
 
-<footer>
-  <section>
-    <div>Let's have a chat..!</div>
-  </section>
+<!-- JavaScript for Menu Toggle -->
+<script>
+  const menuIcon = document.getElementById('menu-icon');
+  const navbar = document.querySelector('.navbar');
 
-  <section>
-    <div>
-      <h4>CONTACT ME</h4>
-    </div>
-
-    <div>
-      <img src="Assest/image/User.png" alt="user">
-      <h5>V.Dilsha Pawani Perera</h5>
-    </div>
-
-    <div>
-      <img src="Assest/image/Email.png" alt="email">
-      <h5>dilshaperera1118@gmail.com</h5>
-    </div>
-
-    <div>
-      <img src="Assest/image/Phone.png" alt="phone">
-      <h5>+94785302355</h5>
-    </div>
-
-    <div>
-      <img src="../../ITS1119-INT_TECH/MY_PORTFOLIO_PRACTICE/Assests/image/Address.png" alt="address">
-      <h5>“Sunanda”,Wakwella Road,Kalegana,Galle</h5>
-    </div>
-
-  </section>
-
-  <section>
-    <div>
-      <h4>NAVIGATE TO</h4>
-    </div>
-  </section>
-
-  <section>
-    <nav>
-      <div> &lt;!&ndash;MENU&ndash;&gt;
-        <ul>
-          <li>
-            <a href="index.html">HOME</a>
-          </li>
-          <li>
-            <a href="about.html">ABOUT</a>
-          </li>
-          <li>
-            <a href="services.html">SERVICES</a>
-          </li>
-          <li>
-            <a href="contact.html">CONTACT</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </section>
-
-  <section>
-    <div>
-      <a href="https://"><img src="Assest/image/Instagram.png" alt="insta"></a>
-    </div>
-    <div>
-      <a href="https://"><img src="Assest/image/Facebook.png " alt="fb"></a>
-    </div>
-    <div>
-      <a href="https://"><img src="Assest/image/GitHub.png" alt="git"></a>
-    </div>
-    <div>
-      <a href="https://"><img src="Assest/image/LinkedIn.png" alt="linkin"></a>
-    </div>
-    <div>
-      <a href="https://"><img src="Assest/image/WhatsApp.png" alt="whatsapp"></a>
-    </div>
-    <div>
-      <p>Copyright ©. All right reserved.<br>Design By : Dilsha Perera</p>
-    </div>
-  </section>
-</footer>-->
+  menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');  // Show/hide the navbar
+  });
+</script>
 </body>
 </html>

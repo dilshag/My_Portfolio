@@ -25,484 +25,8 @@
 
     <title>Dilsha Perera</title>
 
-
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
-    @import url(https://fonts.googleapis.com/css?family=Raleway:400,300|Raleway+Dots|Lato:300|Inconsolata|Montserrat);
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-        border: none;
-        outline: none;
-        font-family: -apple-system, sans-serif;
-    }
-
-   /* :root{
-        background-color: white;
-
-    }*/
-
-    body{
-        background: black;
-        /*   position: relative;*/
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-
-    }
-
-   /* section{
-        max-height: 100vh;
-        padding: 8rem 9% 1rem;
-    }*/
-
-
-    .header {
-        position: fixed;
-        width: 100%;
-        height: 65px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 5%;
-        background: #057244;
-        backdrop-filter: blur(10px);
-        z-index: 1000;
-        top: 0;
-    }
-
-    .navbar{
-        display: flex;
-    }
-
-    .logo {
-        font-size: 2rem;
-        color: black;
-        font-weight: 1000;
-        transition: 0.3s ease;
-        font-family: "Caveat", cursive;
-    }
-
-    .logo > span {
-        color: darkgreen;
-        font-family: "Caveat", cursive;
-    }
-
-
-    .navbar a {
-        font-size: 1rem;
-        color: white;
-        margin: 0 10px;
-        font-weight: 600;
-
-
-
-    }
-
-    .navbar a:hover {
-        color: black;
-        transition: 0.3s;
-    }
-
-
-    #menu-icon {
-        display: none;
-        font-size: 2rem;
-        color: white;
-        cursor: pointer;
-    }
-    /*
-
-    .header{
-        position: fixed;
-        width: 100%;
-        height: 65px;
-        top: 0;
-        bottom: 0;
-        z-index: 1000;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2rem 5%;
-        background: linear-gradient( 30deg ,#737373,#000000 );
-        !*  background: linear-gradient( 100deg ,#057244,#000000 );*!
-        backdrop-filter: blur(10px);
-        transition:  all 0.5s ease;
-
-
-    }
-
-    .logo{
-        font-size: 2rem;
-        color: black;
-        font-weight: 1000;
-        transition: 0.3s ease;
-        font-family: "Caveat", cursive;
-    }
-
-    .logo>span{
-        color: darkgreen;
-        font-family: "Caveat", cursive;
-    }
-
-    .logo:hover{
-        transform: scale(1.05);
-    }
-
-    .navbar a{
-        font-size: 1rem;
-        color: white;
-        letter-spacing: 0.05rem;
-        !*   word-spacing: 50px;*!
-        margin: 0px 20px;
-        font-weight: 600;
-    }
-
-    .navbar a:hover{
-        color: #07F18F; !*nav eke menu eka touch krnakota green wenawa*!
-        transition: .3s;
-    }
-
-    #menu-icon{
-        font-size: 1.5rem;
-        color: white;
-        cursor: pointer;
-        display: none;
-    }
-    */
-
-
-    /*-----About Me----*/
-
-    .aboutContainer{
-
-        background: black;
-        /* background: linear-gradient(135deg,#000000, #057244,#000000 );*/
-    }
-
-    .about{
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Two equal columns */
-        align-items: center;
-        width: 100%;
-        justify-items: center; /* Center the content horizontally */
-
-
-    }
-    .aboutH3{
-        /* margin-bottom: 35rem; */
-        display: grid;
-        margin-top: 8rem;
-        /*margin-left: 35rem*/
-        /*  position: absolute;*/
-        /* top: 5rem;
-         left: 40rem;*/
-        text-align: center;
-        align-items: center;
-        font-weight: 600 ;
-        font-size:2rem;
-        right: 40rem;
-        color: #07F18F;
-    }
-
-    .aboutImg>img{
-        width: 25vw;
-        border: 2px solid darkgreen;
-        border-radius: 25%;
-        box-shadow: 0 0 25px #057244 ;
-        cursor: pointer;
-        transition: 0.4s ease;
-        margin-left: 1rem;
-        /* margin-top: 0.5rem;*/
-        margin-bottom: 12rem;
-        /*  animation: animation1 4s ease-in-out infinite;
-    */
-
-
-
-    }
-
-
-    .aboutContent1{
-        margin-bottom: 10rem;
-    }
-    .aboutContent1 h5 span{
-        margin-left: 10rem;
-        font-size: 1.2rem;
-        /* justify-content: left;*/
-
-
-
-    }
-
-    .aboutContent1 h5{
-        text-align:justify;
-        /* justify-content: left;*/
-        font-size: 1.5rem;
-        line-height: 2.3rem;
-        color: #057244;
-
-
-    }
-    #n1{
-        margin-right: 5rem;
-    }
-    #n2{
-        margin-left: 6.01rem;
-    }
-    #e1{
-    }
-    #a1{
-        margin-left:7.8rem ;
-    }
-    #c1{
-        margin-left: 8.5rem;
-    }
-
-
-    /* Responsive Styling for Mobile Small */
-    @media (max-width: 480px) {
-        .about {
-            grid-template-columns: 1fr;
-            text-align: center;
-        }
-
-        .aboutH3 {
-            font-size: 1.5rem;
-        }
-
-        .aboutImg > img {
-            width: 60vw;
-            margin-bottom: 2rem;
-        }
-
-        .aboutContent1 h5 {
-            font-size: 1rem;
-            line-height: 1.8rem;
-        }
-
-        .navbar {
-            display: none;
-            position: fixed;
-            top: 65px;
-            right: 0;
-            background: #057244;
-            height: 25vh;
-            width: 100%;
-            text-align: center;
-        }
-
-        #menu-icon {
-            display: block;
-        }
-    }
-
-    @media (max-width: 768px) {
-        #menu-icon {
-            display: block;
-        }
-
-        .navbar {
-
-            display: none;
-            flex-direction: column;
-            justify-content: center;
-            position: fixed;
-            top: 65px;
-            right: 0;
-            background: #057244;
-            height: 25vh;
-            width: 100%;
-            text-align: center;
-            opacity: 50%;
-
-
-            /* transform: translateX(100%);
-            transition: transform 2s ease-in-out;*/
-        }
-
-
-        .navbar.active{
-            display: flex;
-        }
-
-        .about {
-            grid-template-columns: 1fr;
-        }
-
-        .aboutH3 {
-            font-size: 1.8rem;
-            margin-top: 7rem;
-        }
-
-        .aboutImg > img {
-            width: 40vw;
-            margin-bottom: 6rem;
-        }
-
-
-        .navbar a {
-            font-size: 1.1rem;
-            margin-top: 13px;
-        }
-
-
-
-
-
-      /*
-        #menu-icon {
-            display: block;
-        }
-
-        .navbar {
-
-            display: none;
-            flex-direction: column;
-            justify-content: center;
-            position: fixed;
-            top: 65px;
-            right: 0;
-            background: #057244;
-            height: 25vh;
-            width: 100%;
-            text-align: center;
-            opacity: 50%;
-
-
-            !* transform: translateX(100%);
-             transition: transform 2s ease-in-out;*!
-        }
-
-        !*
-            .links a {
-                color: #057244;
-                transition: 0.3s; !* Add a transition for hover effect *!
-            }
-
-            .links a:hover {
-                color: darkgreen; !* Change color on hover *!
-            }*!
-        .navbar.active{
-            display: flex;
-        }
-
-       !* .home {
-            grid-template-columns: 1fr;
-            text-align: center;
-            align-items: center;
-            justify-items: center;
-            justify-content: center; !* Center the content vertically *!
-        }*!
-
-        .navbar a {
-
-            font-size: 1.1rem;
-            margin-top: 13px;
-        }
-
-        .aboutH3{
-            text-align: center;
-            display: grid;
-           !* margin-top: 7rem;
-            margin-left: 19rem;*!
-            font-weight: 600 ;
-            font-size:2rem;
-            !*right: 40rem;*!
-           !* color: #07F18F;*!
-        }
-
-        .aboutImg{
-            display: flex;
-            justify-content: center; !* Center the image horizontally *!
-            align-items: center; !* Center the image vertically if needed *!
-            width: 100%; !* Ensure the container takes full width *!
-            margin: 0 auto; !* Center the container itself *!
-           !* width: 30vw;*!
-           !* border: 2px solid darkgreen;
-            border-radius: 25%;
-            box-shadow: 0 0 25px #057244 ;
-            cursor: pointer;
-            transition: 0.4s ease;*!
-           !* margin-left: 1rem;*!
-            !* margin-top: 0.5rem;*!
-           !* margin-bottom: 12rem;*!
-            !*  animation: animation1 4s ease-in-out infinite;
-        *!
-
-        }
-
-        .homeImg >img{
-            width: 40vh;
-            height: 40vh;
-            margin-top: -5rem;
-
-
-        }
-
-
-        .aboutContent1{
-            !*
-            margin: 0 auto;
-            *!
-            justify-self: center; !* Center the text *!
-            max-width: 90%; !* Ensure content fits within the screen *!
-
-            margin-bottom: 10rem;
-        }
-        .aboutContent1 h5 span{
-            justify-self: center; !* Center the text *!
-            max-width: 90%; !* Ensure content fits within the screen *!
-
-            margin-bottom: 10rem;
-            margin-left: 10rem;
-            font-size: 1.2rem;
-            !* justify-content: left;*!
-
-
-
-        }
-
-        .aboutContent1 h5{
-            text-align:justify;
-            !* justify-content: left;*!
-            font-size: 1.5rem;
-            line-height: 2.3rem;
-            color: #057244;
-
-
-        }
-        #n1{
-            margin-right: 5rem;
-        }
-        #n2{
-            margin-left: 6.01rem;
-        }
-        #e1{
-        }
-        #a1{
-            margin-left:7.8rem ;
-        }
-        #c1{
-            margin-left: 8.5rem;
-        }*/
-
-
-        @media (max-width: 480px) {
-
-            }
-
-
-    }
-</style>
 </head>
 <body>
-
 
 <header class="header">
     <div class="logo">DIL<span>S</span>HA</div>
@@ -515,33 +39,38 @@
         <a href="contact.html">CONTACT</a>
     </nav>
 </header>
-
 <main class="aboutContainer"> <!--About-->
-    <h3 class="aboutH3">ABOUT ME</h3>
 
     <section class="about">
         <div class="aboutImg">
-            <img src="Assest/image/about/IMG_1956%2011.JPG" alt="Photo 1">
+            <!-- <img src="Assest/image/about/IMG_1956%2011.JPG" alt="Photo 1">-->
+            <img src="Assest/image/about/Untitled_design-removebg-preview.png" alt="Photo 1">
         </div>
 
         <div class="aboutContent1">
+            <h3 class="aboutH3">ABOUT ME</h3>
+           <br>
+            <div class="para">
+                <p>A passionate web developer with a knack for <br>turning ideas into interactive, engaging web<br> experiences. With a blend of creativity <br>and technical expertise, I specialize in <br> crafting websites that not only look stunning <br>but also perform seamlessly.</p>
+            </div>
+            <br>
             <h5>Name:<span id="n1">Dilsha Perera </span> </h5>
             <h5>Nationality:<span id="n2"> Sri Lanka</span> </h5>
-            <h5>Email:<span id="e1">dilshaperera1118@gmail.com</span>  </h5>
+            <h5>Email:<span id="e1">dilshaperera1118<br>@gmail.com</span>  </h5>
             <h5>Address:<span id="a1"> Kalegana,Galle </span></h5>
             <h5>Contact:<span id="c1">078 -5302355 </span> </h5>
 
         </div>
     </section>
 </main>
-<!--
-<main class="educationContainer">&lt;!&ndash;EDUCATION&ndash;&gt;
-    <h3 class="educationH3">EDUCATION</h3>
-    <section class="education">
 
-        <div id="bg"></div>
+<main class="educationContainer"><!--EDUCATION-->
+    <section class="education">
+        <h3 class="educationH3">EDUCATION</h3>
+       <!-- <div id="bg"></div>-->
         <div class="eduContent1">
-            <div class="card card-dark1">
+
+            <div class="card card1">
                 <div>
                     <img src="Assest/image/about/Rippon.png" alt="rippon">
                 </div>
@@ -550,7 +79,7 @@
                 <p>In 2015, I took the Ordinary Level Examination, and in2018, I sat for the Advanced Level Examination</p>
             </div>
 
-            <div class="card card-dark2">
+            <div class="card card2">
                 <div>
                     <img src="Assest/image/about/cot.png" alt="cot">
                 </div>
@@ -559,7 +88,7 @@
                 <p>I took Certificate in Telecommunication Technician NVQ Level 4</p>
             </div>
 
-            <div class="card card-dark3">
+            <div class="card card3">
                 <div>
                     <img src="Assest/image/about/ijse.png" alt="ijse">
                 </div>
@@ -567,15 +96,11 @@
                 <h6>2024-Present</h6>
                 <p>I am currently pursuing a BSC (Hons) in Computer Science at IJSE</p>
             </div>
-            &lt;!&ndash; <div class="card card-light">
-                 <h3>Card Title</h3>
-                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora provident obcaecati temporibus sequi similique ullam sint sunt illum.</p>
-             </div>&ndash;&gt;
         </div>
     </section>
 </main>
 
-<main class="skillsContainer"> &lt;!&ndash;MY SKILLS&ndash;&gt;
+<main class="skillsContainer"> <!--MY SKILLS-->
     <h3 class="skillsH3">MY SKILLS</h3>
     <section class="skills">
 
@@ -628,7 +153,6 @@
 
     </section>
 </main>
-
 
 
 <main class="assignmentContainer">
@@ -740,52 +264,58 @@
 
     </section>
 </main>
+<main class="myProjectsContainer"><!--MY PROJECTS-->
 
-<main class="myProjectsContainer">&lt;!&ndash;MY PROJECTS&ndash;&gt;
-    <h3 class="myProjectH3">MY PROJECTS</h3>
     <section class="myProjects">
-
-        &lt;!&ndash; Main Container &ndash;&gt;
+        <h3 class="myProjectH3">MY PROJECTS</h3>
+        <!-- Main Container -->
         <div class="myProjectsContent">
-            &lt;!&ndash; Glassmorphism Card 1 &ndash;&gt;
+            <!-- Glassmorphism Card 1 -->
             <div class="glass-card">
                 <div class="prfImg">
                     <img src="Assest/image/about/prf.png" alt="prf" >
                 </div>
-                <h3>PRF Project</h3>
-                <p>Developed a console-based Java application for a Programming Fundamentals coursework.</p>
+               <div class="cont">
+                   <h3>PRF Project</h3>
+                   <p>Developed a console-based Java application for a Programming Fundamentals coursework.</p>
+
+               </div>
                 <button class="glass-button"><a href="" id="git4"><i class='bx bxl-github' undefined ></i></a>Go to Git</button>
             </div>
 
-            &lt;!&ndash; Glassmorphism Card 2 &ndash;&gt;
+            <!-- Glassmorphism Card 2 -->
             <div class="glass-card">
                 <div class="gameImg">
                     <img src="Assest/image/about/game.png" alt="game">
                 </div>
-                <h3>Connect Four Game</h3>
-                <p>This is a game that made using JavaFx and Java OOP concepts.</p>
-                <button class="glass-button"><a href="" id="git3"><i class='bx bxl-github' undefined ></i></a>Go to Git</button>
+                <div class="cont">
+                    <h3>Connect Four Game</h3>
+                    <p>This is a game that made using JavaFx and Java OOP concepts.</p>
+
+                </div>
+                 <button class="glass-button"><a href="" id="git3"><i class='bx bxl-github' undefined ></i></a>Go to Git</button>
             </div>
 
-            &lt;!&ndash; Glassmorphism Card 3 &ndash;&gt;
+            <!-- Glassmorphism Card 3 -->
             <div class="glass-card">
 
                 <div class="lmsImg">
                     <img src="Assest/image/about/libraryManSys.png" alt="lbry">
                 </div>
-                <h3>Library Management System</h3>
-                <p>This is a standalone application made using JavaFx and Java OOP concepts.</p>
-                <button class="glass-button" > <a href="https://github.com/dilshag/Library_Management_System-Semester_Final-" id="git2"><i class='bx bxl-github' undefined ></i></a></button>
+               <div class="cont">
+                   <h3>Library Management System</h3>
+                   <p>This is a standalone application made using JavaFx and Java OOP concepts.</p>
+               </div>
+                 <button class="glass-button" > <a href="https://github.com/dilshag/Library_Management_System-Semester_Final-" id="git2"><i class='bx bxl-github' undefined ></i></a></button>
 
             </div>
         </div>
 
-        &lt;!&ndash;  <script src="scripts.js"></script>&ndash;&gt;
+        <!--  <script src="scripts.js"></script>-->
 
     </section>
 </main>
-
-<main class="galleryContainer">&lt;!&ndash;GALLERY&ndash;&gt;
+<main class="galleryContainer"><!--GALLERY-->
     <h3 class="galleryH3">GALLERY</h3>
     <div class="galleryContent">
 
@@ -866,7 +396,7 @@
             </li>
         </ul>
     </div>
-    &lt;!&ndash; <section class="gallery">
+    <!-- <section class="gallery">
          <input type="radio" name="slider" id="s1" checked>
          <input type="radio" name="slider" id="s2">
          <input type="radio" name="slider" id="s3">
@@ -878,10 +408,10 @@
          <label for="s3" id="slide3"><img src="https://wallpaperaccess.com/full/1154341.jpg" alt=""></label>
          <label for="s4" id="slide4"><img src="https://wallpapercave.com/wp/wp2634222.jpg" alt=""></label>
          <label for="s5" id="slide5"><img src="https://images5.alphacoders.com/343/thumb-1920-343645.jpg" alt=""></label>
-     </section>&ndash;&gt;
+     </section>-->
 
 
-    &lt;!&ndash; <section class="gallery">
+    <!-- <section class="gallery">
          <div>
              <h3>GALLERY</h3>
          </div>
@@ -912,10 +442,10 @@
          <div>
              <img src="Assest/image/about/img9.png" alt="img9">
          </div>
-     </section>&ndash;&gt;
+     </section>-->
 </main>
 
-
+<!--
 <footer class="footerContainer">
     <h3 class="footerH3">Let's have a chat..!</h3>
     <section class="footer">
@@ -986,6 +516,43 @@
 </footer>-->
 
 
+<footer>
+    <div class="footer-container">
+        <h1>Let's have a chat..!</h1>
+        <div class="contact-info">
+            <div class="section">
+                <h3>CONTACT ME</h3>
+                <img src="Assest/image/footer/icons8-user-30.png" alt="user">
+                <p>078-5302355</p>
+            </div>
+            <div class="section">
+                <h3>EMAIL</h3>
+                <img src="Assest/image/footer/icons8-email-30.png" alt="email">
+                <p><a href="mailto:dilshaperera1118@gmail.com">dilshaperera1118@gmail.com</a></p>
+            </div>
+            <div class="section">
+                <h3>ADDRESS</h3>
+                <img src="Assest/image/footer/icons8-address-30%20(1).png" alt="address">
+                <p>Sunanda”,Wakwella Road,Kalegana,Galle</p>
+                <p>Sri Lanka</p>
+            </div>
+        </div>
+        <div class="footer-text">
+            <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+          <!--  <img src="../Assests/images/heart.png">-->
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/dilshag" id="git"><i class='bx bxl-github' undefined ></i></a>
+            <a href=""><i class='bx bxl-linkedin' id="linkdin"></i></a>
+            <a href=""><i class='bx bxl-instagram' id="insta" ></i> </a>
+            <a href=""><i class='bx bxl-whatsapp' id="whtsapp"></i> </a>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright ©. All right reserved.<br>Design By : Dilsha Perera</p>
+        </div>
+    </div>
+</footer>
+
 <!-- JavaScript for Menu Toggle -->
 <script>
     const menuIcon = document.getElementById('menu-icon');
@@ -995,5 +562,6 @@
         navbar.classList.toggle('active');  // Show/hide the navbar
     });
 </script>
+
 </body>
 </html>
